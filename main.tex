@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aryan Singh} \\ \vspace{1pt}
+    \small +91-9713904100 $|$ \href{singharyan4477@gmail.com}{\underline{singharyan4477@gmail.com}} $|$
+    \href{https://linkedin.com/in/aryan447/}{\underline{linkedin.com/in/aryan447}} $|$
+    \href{https://github.com/Aryan447}{\underline{github.com/Aryan447}}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, Java, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, NextJS, TailwindCSS} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Colab, Kaggle, VS Code, PyCharm, IntelliJ} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Scikit-learn, Tensorflow}
+    } \\
+    \textbf{Algorithms}{: Supervised \& Unsupervised Learning, Logistic Regression, Random Forest, XGBoost, KNN, SVM, k-Means, Hyperparameter Optimization} \\
+    \textbf{Soft Skills}{: Problem Solving, Critical Thinking, Time Management, Communication, Team Collaboration}
+  }
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Machine Learning Intern}{May 2024 -- June 2024}
+      {Cognifyz Technologies}{Remote}
+      \resumeItemListStart
+        \resumeItem{Used a restaurant dataset with features such as cuisines, price range, city, and delivery availability to model restaurant quality.}
+        \resumeItem{Built a regression model to predict restaurant ratings using preprocessing (handling nulls, encoding categorical variables), feature scaling, and model evaluation techniques like MSE and R\textsuperscript{2} Score.}
+        \resumeItem{Developed a content-based recommendation system based on user input preferences like cuisine and price range.}
+        \resumeItem{Implemented a classification model to categorize restaurants into 6 classes: Poor, Average, Good, Very Good, Excellent, and Not Rated. Achieved 89\% accuracy using Logistic Regression and Random Forest.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
+%-----------PROJECTS-----------
+\section{Research Project}
+
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Anti-Money Laundering Classification} $|$ \emph{Python, XGBoost, MEALPY}}{}
+      \resumeItemListStart
+        \resumeItem{Used IBM AML-World dataset with features like transaction type, amount, balance before/after transaction.}
+        \resumeItem{Handled class imbalance, encoded categorical features, and applied normalization to improve model input.}
+        \resumeItem{Implemented swarm algorithms (PSO, GWO, ABC, CS) using MEALPY to optimize XGBoost hyperparameters (learning rate, max depth, etc.).}
+        \resumeItem{Trained XGBoost to classify transactions as either fraudulent or genuine; achieved up to 91\% F1-score, 86\% Precision and 97\% Recall.}
+        \resumeItem{Visualized feature correlations and model results using Seaborn/Matplotlib for in-depth insights.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Personal Project}
+
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Computer Generated Reviews Analyzer} $|$ \emph{Python, Scikit-learn, NLP}}{}
+      \resumeItemListStart
+        \resumeItem{Scraped and compiled review datasets from multiple online sources.}
+        \resumeItem{Cleaned data using text preprocessing: tokenization, stopword removal, lemmatization.}
+        \resumeItem{Developed a binary sentiment classification model (positive/negative) using TF-IDF and classifiers like SVM and Random Forest.}
+        \resumeItem{Achieved 87\% accuracy and 85\% F1-score; performance improved via hyperparameter tuning.}
+        \resumeItem{Visualized word frequencies, sentiment distributions, and classifier confidence levels.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Madhav Institute of Technology \& Science}{Gwalior, MP, India}
+        {Bachelors of Technology in Artificial Intelligence and Machine Learning}{Nov 2021 -- Jun 2025}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
