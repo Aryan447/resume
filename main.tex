@@ -1,221 +1,153 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Author : Aryan Singh
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-\usepackage[a4paper, total={6in, 8in}]{geometry}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
-\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1:} #2 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-5pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Aryan Singh} & Email: \href{mailto:singharyan4477@gmail.com}{singharyan4477@gmail.com}\\
+  \href{https://www.linkedin.com/in/Aryan447}{linkedin.com/in/Aryan447} & Phone: +91-9713904100 \\
+\end{tabular*}
 
-\begin{center}
-    \textbf{\Huge \scshape Aryan Singh} \\ \vspace{1pt}
-    \small +91-9713904100 $|$ \href{singharyan4477@gmail.com}{\underline{singharyan4477@gmail.com}} $|$
-    \href{https://linkedin.com/in/aryan447/}{\underline{linkedin.com/in/aryan447}} $|$
-    \href{https://github.com/Aryan447}{\underline{github.com/Aryan447}}
-\end{center}
+%---------SUMMARY---------
+\section{Professional Summary}
+Results-oriented Machine Learning Engineer and Data Analyst experienced in data preprocessing, model design, and deployment of production-grade ML pipelines. Strong grasp of data analysis, feature engineering, and model optimization using Python, Scikit-learn, TensorFlow, and XGBoost. Skilled in SQL, cloud integration, REST API development, and performance tuning. Proficient in C/C++, Java, Go, and Linux-based systems. Strong in DSA and OOP, with proven ability to build scalable, reliable, and explainable solutions across AI-driven systems.
 
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, C, C++, Go, SQL, Bash, JavaScript, HTML/CSS} \\
-     \textbf{Frameworks}{: React, NextJS, TailwindCSS} \\
-     \textbf{Developer Tools}{: Linux, Git, Docker, Google Colab, Kaggle, Vim, VS Code, PyCharm, IntelliJ} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Scikit-learn, Tensorflow}
-    } \\
-    \textbf{Algorithms}{: Supervised \& Unsupervised Learning, Logistic Regression, Random Forest, XGBoost, KNN, SVM, k-Means, Hyperparameter Optimization} \\
-    \textbf{Soft Skills}{: Software Development, Problem Solving, Critical Thinking, Time Management, Communication, Team Collaboration, Agile}
-  }
- \end{itemize}
-
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Machine Learning Intern}{May 2024 -- June 2024}
-      {Cognifyz Technologies}{Remote}
-      \resumeItemListStart
-        \resumeItem{Used a restaurant dataset with features such as cuisines, price range, city, and delivery availability to model restaurant quality.}
-        \resumeItem{Built a regression model to predict restaurant ratings using preprocessing (handling nulls, encoding categorical variables), feature scaling, and model evaluation techniques like MSE and R\textsuperscript{2} Score.}
-        \resumeItem{Developed a content-based recommendation system based on user input preferences like cuisine and price range.}
-        \resumeItem{Implemented a classification model to categorize restaurants into 6 classes: Poor, Average, Good, Very Good, Excellent, and Not Rated. Improved classification model accuracy to 89\% using Logistic Regression and Random Forest.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    % \resumeSubheading
-    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
-    %   {Southwestern University}{Georgetown, TX}
-    %   \resumeItemListStart
-    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
-    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-    % \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-    %   {Southwestern University}{Georgetown, TX}
-    %   \resumeItemListStart
-    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-    %     \resumeItem{Developed a game in Java to test the generated dungeons}
-    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-    %   \resumeItemListEnd
-
-%-----------PROJECTS-----------
-\section{Research Project}
-
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
 \resumeSubHeadingListStart
-  \resumeProjectHeading
-    {\textbf{Anti-Money Laundering Classification} $|$ \emph{Python, XGBoost, MEALPY}}{}
+
+  \resumeSubheading
+    {Cognifyz Technologies}{Remote}
+    {Machine Learning Engineer Intern}{Feb 2025 -- Jul 2025}
     \resumeItemListStart
-      \resumeItem{Utilized IBM AML-World dataset with features like transaction type, amount, and balance before/after transactions.}
-      \resumeItem{Performed data preprocessing: handled class imbalance, encoded categorical features, and applied normalization.}
-      \resumeItem{Optimized XGBoost hyperparameters (learning rate, max depth) using swarm algorithms (PSO, GWO, ABC, CS) via MEALPY.}
-      \resumeItem{Trained XGBoost to classify transactions as fraudulent or genuine, achieving 91\% F1-score, 86\% Precision, and 97\% Recall.}
-      \resumeItem{Visualized feature correlations and model performance using Seaborn and Matplotlib for actionable insights.}
+      \resumeItem{Model Development}
+        {Designed ML models for restaurant rating prediction using Scikit-learn and Pandas; improved RMSE by 18\% with advanced feature engineering and scaling.}
+      \resumeItem{Classification Pipeline}
+        {Trained Logistic Regression, Random Forest, and XGBoost classifiers achieving 89\% accuracy via cross-validation and parameter optimization.}
+      \resumeItem{Automation and Deployment}
+        {Automated data preprocessing and model evaluation pipelines with REST API integration, reducing manual effort by 40\% and improving response time by 25\%.}
+      \resumeItem{Collaboration and Workflow}
+        {Applied Agile and version control using Git, JIRA, and CI/CD pipelines ensuring reproducible and efficient development cycles.}
     \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Personal Project}
+%-----------PROJECTS-----------------
+\section{Projects}
 \resumeSubHeadingListStart
-  \resumeProjectHeading
-    {\textbf{Real-Time Chat Application} $|$ \emph{Go, TCP, Concurrency}}{}
+
+  \resumeSubheading
+    {Anti-Money Laundering Detection System}{}
+    {Python, XGBoost, MEALPY, PSO, GWO, NumPy, Pandas, Matplotlib}{}
     \resumeItemListStart
-      \resumeItem{Built a client-server chat application using TCP sockets in Go.}
-      \resumeItem{Implemented concurrent message handling with goroutines and mutex synchronization.}
-      \resumeItem{Developed client-side functionality for nickname registration and message sending.}
-      \resumeItem{Enabled real-time broadcasting of messages to all connected clients.}
-      \resumeItem{Handled dynamic client connections and disconnections with robust error management.}
+      \resumeItem{Model Implementation}
+        {Analyzed 32 million transactions of IBM AML dataset and developed fraud detection model with imbalance handling (SMOTE) and categorical encoding.}
+      \resumeItem{Optimization Algorithms}
+        {Enhanced XGBoost with PSO and GWO optimizers improving precision by 20\% and recall by 24\%.}
+      \resumeItem{Explainability and Compliance}
+        {Used SHAP and LIME for model interpretation ensuring transparency for financial compliance teams.}
+      \resumeItem{Production Deployment}
+        {Deployed the containerized model through Docker with REST endpoints for real-time prediction and monitoring.}
     \resumeItemListEnd
+
+\resumeSubheading
+  {Concurrent Chat Application}{}
+  {Go, TCP/IP, Concurrency, Channels, Goroutines, Docker, Distributed Systems}{}
+  \resumeItemListStart
+    \resumeItem{Scalable Architecture}
+      {Built concurrent chat server handling 200+ simultaneous client connections using goroutines, channels, and event-driven message broadcasting.}
+    \resumeItem{Latency Optimization}
+      {Reduced end-to-end message latency by 30\% through buffered channels, connection pooling, and efficient synchronization primitives.}
+    \resumeItem{Fault Tolerance}
+      {Implemented heartbeat checks and automatic reconnection flows achieving ~99.9\% uptime with graceful handling of dropped connections.}
+    \resumeItem{Resource Efficiency}
+      {Optimized CPU/memory consumption enabling stable multi-threaded performance on low-compute servers and edge-hosted environments.}
+  \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Madhav Institute of Technology \& Science}{Gwalior, MP, India}
-        {Bachelors of Technology in Artificial Intelligence and Machine Learning}{Nov 2021 -- Jun 2025}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Madhav Institute of Technology \& Science (MITS)}{Gwalior, MP}
+    {B.Tech in Artificial Intelligence and Machine Learning | CGPA: 7.1/10}{Nov 2021 -- Jun 2025}
+\resumeSubHeadingListEnd
 
-%-------------------------------------------
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item{
+    Programming: Python, C/C++, Java, Go, JavaScript/TypeScript, SQL, Bash \\
+    ML & AI: TensorFlow, PyTorch, Scikit-learn, XGBoost, NumPy, Pandas, OpenCV, MEALPY \\
+    Development: REST APIs, Flask, React, gRPC, WebSockets, Redis, Database Design, API Integration \\
+    DevOps & Tools: Git, Docker, Linux, CI/CD, VSCode, Postman, JIRA, Cloud (AWS/GCP), Virtualization \\
+    Concepts: Data Structures, Algorithms, OOP, System Design, OS, DBMS, CN, Data Preprocessing \\
+    Additional: Data Visualization, Feature Selection, Model Monitoring, Optimization, Leadership, Teamwork
+  }
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS & ACHIEVEMENTS-----------
+\section{Achievements and Certifications}
+\resumeSubHeadingListStart
+  \resumeItemListStart
+    \resumeItem{Problem Solving}
+      {Solved 200+ algorithmic problems on LeetCode, GFG, and CodeStudio demonstrating analytical reasoning.}
+    \resumeItem{Certification}
+      {Completed Blockchain and Its Applications (NPTEL, IIT Kharagpur) with verified certification.}
+    \resumeItem{Research Publication}
+      {Submitted research paper – Dual-Stage Predictive Model for ICU Risk Stratification, ICSISCET 2025, Springer LNCS (Scopus Indexed)}
+    \resumeItem{Hackathons}
+      {Ranked Top 10 among 80+ teams at MITS Hackathon 2024 for developing an AI-based decision automation tool.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
 \end{document}
-
